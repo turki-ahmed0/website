@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>تطبيق تركي للغة الإنجليزية</title>
+</head>
+<body>
+    <section id="welcome">
+        <h1>أهلاً بك في تطبيق تركي للغة الإنجليزية</h1>
+    </section>
+    
+    <section id="login">
+        <h2>تسجيل الدخول</h2>
+        <form id="login-form">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" required>
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+        <p id="login-result"></p>
+    </section>
+    
+    <section id="notes">
+        <h2>الملاحظات</h2>
+        <textarea id="notes-input" placeholder="اكتب ملاحظاتك هنا..."></textarea>
+        <button onclick="saveNotes()">حفظ الملاحظات</button>
+        <p id="notes-result"></p>
+    </section>
+    
+    <section id="readiness">
+        <h2>تقييم الجاهزية</h2>
+        <label for="knowledge-level">حدد مستوى جاهزيتك من 1 إلى 10:</label>
+        <input type="number" id="knowledge-level" min="1" max="10">
+        <button onclick="assessReadiness()">تقييم الجاهزية</button>
+        <p id="readiness-result"></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
